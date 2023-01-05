@@ -13,6 +13,8 @@ export class ProductsComponent implements OnInit {
   myShoppingCart: Product[] = [];
   total = 0;
   products: Product[] = [];
+  today = new Date();
+  date = new Date(2023, 1, 21)
 // inyeccion de servicios
   constructor(
     private storeService: StoreService,

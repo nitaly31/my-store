@@ -4,6 +4,15 @@
 <p>
   total: ${{ total }}
 </p>
+<p>
+  Fecha: {{today | date: 'short'}}
+</p>
+<p>
+  Fecha: {{date | timeAgo}}
+</p>
+<p>
+  Fecha2: {{date | date: 'dd/MM/yyy'}}
+</p>
 <div class="products--grid">
   <app-product
   [product]="product"
