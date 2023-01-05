@@ -13,8 +13,6 @@ export class StoreService {
   //Obervable -- escuchar activamente cambios (2)
   myCart$ = this.myCart.asObservable();
 
-  constructor() { }
-
   addProduct(product: Product) {
     this.myShoppingCart.push(product);
     this.myCart.next(this.myShoppingCart);
